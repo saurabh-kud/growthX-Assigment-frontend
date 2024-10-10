@@ -1,0 +1,79 @@
+.card {
+  background-color: #ffffff;
+  border: 1px solid rgba(21, 170, 191, 0.3);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #045d6a;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.card small {
+  font-size: 0.9rem;
+  color: #555;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.flex {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 0.9rem;
+  width: 48%;
+  /* Make buttons equal width */
+}
+
+.card button.accept {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.card button.accept:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+.card button.reject {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.card button.reject:hover {
+  background-color: #c82333;
+  transform: translateY(-2px);
+}
+
+.card button:active {
+  transform: translateY(1px);
+}
