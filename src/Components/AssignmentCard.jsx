@@ -18,7 +18,7 @@ const AssignmentCard = ({ con }) => {
     };
     try {
       const data = await axios.post(
-        `${BASE_URL}/assignments/${con?._id}/accept}`,
+        `${BASE_URL}/assignments/${con?._id}/accept`,
         {},
         config
       );
@@ -39,7 +39,7 @@ const AssignmentCard = ({ con }) => {
     };
     try {
       const data = await axios.post(
-        `${BASE_URL}/assignments/${con?._id}/reject}`,
+        `${BASE_URL}/assignments/${con?._id}/reject`,
         {},
         config
       );
